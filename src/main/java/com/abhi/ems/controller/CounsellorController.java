@@ -42,6 +42,7 @@ public class CounsellorController {
 		else {
 			Integer counsellor_id = counsellordto.getCounsellor_id();
 			HttpSession session = req.getSession(true);
+			session.setAttribute("counsellor_id", counsellor_id);
 			DashboardDto dashboarddto = enquiryService.getDashboardInfo(counsellor_id);
 			model.addAttribute("Dashboard", dashboarddto);
 			return "dashboard";

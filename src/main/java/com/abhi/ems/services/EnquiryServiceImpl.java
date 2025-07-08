@@ -8,6 +8,7 @@ import java.util.stream.Collectors;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Example;
+import org.springframework.stereotype.Service;
 
 import com.abhi.ems.dto.DashboardDto;
 import com.abhi.ems.dto.EnqFilterDTO;
@@ -17,6 +18,7 @@ import com.abhi.ems.entity.Enquiry;
 import com.abhi.ems.repo.CounsellorRepo;
 import com.abhi.ems.repo.EnquiryRepo;
 
+@Service
 public class EnquiryServiceImpl implements EnquiryService{
 	
 	@Autowired
