@@ -83,7 +83,7 @@ public class EnquiryServiceImpl implements EnquiryService{
 			entity.setEnqStatus(filterDto.getEnqStatus());
 		}
 		Counsellor counsellor = new Counsellor();
-		counsellor.setCounsellor_id(counsellor_id);
+		counsellor.setCounsellorId(counsellor_id);
 		entity.setCounsellor(counsellor);
 		Example<Enquiry> of = Example.of(entity);
 		List<Enquiry> enqList = enqRepo.findAll(of);

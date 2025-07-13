@@ -37,7 +37,7 @@ public class CounsellorServiceImpl implements CounsellorService {
 		Counsellor entity = new Counsellor();
 		BeanUtils.copyProperties(counsellorDTO, entity);
 		Counsellor saveEntity = counsellorRepo.save(entity);
-		return null != saveEntity. getCounsellor_id();
+		return null != saveEntity. getCounsellorId();
 	}
 
 }

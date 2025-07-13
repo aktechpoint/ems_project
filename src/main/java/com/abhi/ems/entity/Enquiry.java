@@ -25,6 +25,7 @@ public class Enquiry {
 	private Long Mobile_no;
 	private String visitor_mode;
 	private String officer_name;
+	
 	private String enqStatus;
 	private String Property_id;
 	

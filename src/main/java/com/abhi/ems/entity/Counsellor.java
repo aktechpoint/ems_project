@@ -20,7 +20,7 @@ import lombok.Setter;
 public class Counsellor {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer counsellor_id;
+	private Integer counsellorId;
 	private String coun_name;
 	private String email;
 	private String pwd;
@@ -32,13 +32,17 @@ public class Counsellor {
 	@OneToMany(mappedBy = "counsellor", cascade = CascadeType.ALL)
 	private List<Enquiry> enquiry;
 
-	public Integer getCounsellor_id() {
-		return counsellor_id;
+	
+
+	public Integer getCounsellorId() {
+		return counsellorId;
 	}
 
-	public void setCounsellor_id(Integer counsellor_id) {
-		this.counsellor_id = counsellor_id;
+	public void setCounsellorId(Integer counsellorId) {
+		this.counsellorId = counsellorId;
 	}
+
+	
 
 	public String getCoun_name() {
 		return coun_name;
